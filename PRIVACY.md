@@ -1,4 +1,4 @@
-# Privacy Policy — Gitlift
+# Privacy Policy - Gitlift
 
 _Last updated: 2026-06-27_
 
@@ -25,10 +25,10 @@ All data is kept locally in your browser. You can remove it at any time by disco
 
 ## Permissions
 
-- **storage** — to save your settings and credentials locally.
-- **identity** — to run the GitHub OAuth sign-in flow (optional auth method).
-- **host access** to `leetcode.com`, `geeksforgeeks.org`, `hackerrank.com` — to detect accepted submissions and read your solution code.
-- **host access** to `github.com` / `api.github.com` — to create the repository and commit your solutions.
+- **storage** - to save your settings and credentials locally.
+- **identity** - to run the GitHub OAuth sign-in flow (optional auth method).
+- **host access** to `leetcode.com`, `geeksforgeeks.org`, `hackerrank.com` - to detect accepted submissions and read your solution code.
+- **host access** to `github.com` / `api.github.com` - to create the repository and commit your solutions.
 
 ## Contact
 

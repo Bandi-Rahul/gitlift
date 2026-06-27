@@ -34,7 +34,7 @@ async function connect({ clientId, clientSecret }) {
 
 async function testConnection() {
   const { token } = await chrome.storage.local.get('token');
-  if (!token) throw new Error('Not connected — add a token or authorize with GitHub first.');
+  if (!token) throw new Error('Not connected - add a token or authorize with GitHub first.');
   const user = await github.getUser(token);
   await chrome.storage.local.set({ username: user.login });
   return { ok: true, username: user.login };

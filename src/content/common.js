@@ -9,7 +9,7 @@ window.Gitlift = window.Gitlift || {};
       el.id = 'gitlift-toast';
       document.body.appendChild(el);
     }
-    el.textContent = '⇡ Gitlift — ' + text;
+    el.textContent = '⇡ Gitlift - ' + text;
     el.style.cssText =
       'position:fixed;z-index:2147483647;bottom:20px;right:20px;padding:11px 16px;' +
       'border-radius:10px;font:600 13px/1.4 system-ui,-apple-system,sans-serif;color:#fff;' +

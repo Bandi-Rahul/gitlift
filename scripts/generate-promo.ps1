@@ -142,7 +142,7 @@ function Composite-Result([string]$name, [string]$title, [string]$subtitle) {
     $tf = New-Object System.Drawing.Font('Segoe UI', 19, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
     $tfmt = New-Object System.Drawing.StringFormat
     $tfmt.LineAlignment = [System.Drawing.StringAlignment]::Center
-    $toastText = [string][char]0x21E1 + ' Gitlift ' + [char]0x2014 + ' Pushed "1. Two Sum" ' + [char]0x2713
+    $toastText = [string][char]0x21E1 + ' Gitlift - Pushed "1. Two Sum" ' + [char]0x2713
     $g.DrawString($toastText, $tf, (New-Object System.Drawing.SolidBrush([System.Drawing.Color]::White)), (New-Object System.Drawing.RectangleF(($tx + 16), $ty, ($tw - 16), $th)), $tfmt)
 
     $g.Dispose()

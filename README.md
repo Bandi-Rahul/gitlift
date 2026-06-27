@@ -1,6 +1,6 @@
 # Gitlift
 
-A Chrome extension that automatically pushes your accepted coding solutions to a GitHub repository — one tidy commit per solved problem, organized by platform and problem. Solve a problem, and Gitlift lifts it straight into your GitHub.
+A Chrome extension that automatically pushes your accepted coding solutions to a GitHub repository - one tidy commit per solved problem, organized by platform and problem. Solve a problem, and Gitlift lifts it straight into your GitHub.
 
 Supported sites:
 
@@ -30,7 +30,7 @@ A content script on each supported site detects a successful submission, capture
 
 Open the extension's **Settings** (popup → Settings) and either:
 
-### Option A — OAuth (recommended)
+### Option A - OAuth (recommended)
 
 1. Create a GitHub **OAuth App** at <https://github.com/settings/developers> → *New OAuth App*.
 2. Set **Authorization callback URL** to the value shown in Settings
@@ -38,9 +38,9 @@ Open the extension's **Settings** (popup → Settings) and either:
 3. Copy the **Client ID**, generate a **Client Secret**, paste both into Settings.
 4. Click **Authorize with GitHub**.
 
-> Your credentials are stored locally in your browser only — nothing is shipped inside the extension.
+> Your credentials are stored locally in your browser only - nothing is shipped inside the extension.
 
-### Option B — Personal Access Token
+### Option B - Personal Access Token
 
 1. Create a token with **repo** scope at <https://github.com/settings/tokens>.
 2. Paste it into Settings → **Save token & connect**.
