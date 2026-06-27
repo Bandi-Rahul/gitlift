@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <span class="logo">⇡</span>
+      <h1>Gitlift</h1>
+    </header>
+
+    <div class="card">
+      <div class="row">
+        <span class="label">Status</span>
+        <span id="status" class="value muted">Checking…</span>
+      </div>
+      <div class="row">
+        <span class="label">Account</span>
+        <span id="username" class="value">—</span>
+      </div>
+      <div class="row">
+        <span class="label">Repository</span>
+        <a id="repo" class="value link" target="_blank" rel="noopener">—</a>
+      </div>
+      <div class="row">
+        <span class="label">Solutions synced</span>
+        <span id="solved" class="value strong">0</span>
+      </div>
+    </div>
+
+    <button id="options" class="btn">Settings</button>
+    <p class="hint">Solve a problem on LeetCode, GeeksforGeeks or HackerRank — it commits automatically.</p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
