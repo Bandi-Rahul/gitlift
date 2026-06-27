@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="logo">⇡</span>
+        <div>
+          <h1>Gitlift settings</h1>
+          <p class="sub">Push your accepted solutions to GitHub automatically.</p>
+        </div>
+      </header>
+
+      <div id="status" class="status"></div>
+
+      <section class="panel">
+        <h2>1. Target repository</h2>
+        <p class="desc">Name of the GitHub repo where solutions are committed. It's created automatically if it doesn't exist.</p>
+        <div class="field">
+          <input id="repo" type="text" placeholder="coding-solutions" />
+          <button id="save" class="btn primary">Save</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>2. Connect GitHub — OAuth</h2>
+        <p class="desc">
+          Create a GitHub <a href="https://github.com/settings/developers" target="_blank" rel="noopener">OAuth App</a>
+          and set its <b>Authorization callback URL</b> to the value below, then paste the Client ID and Secret.
+        </p>
+        <div class="callout">
+          <span class="callout-label">Authorization callback URL</span>
+          <code id="redirect">…</code>
+        </div>
+        <label class="lbl">Client ID</label>
+        <input id="clientId" type="text" placeholder="Iv1.xxxxxxxxxxxx" />
+        <label class="lbl">Client Secret</label>
+        <input id="clientSecret" type="password" placeholder="••••••••••••••••" />
+        <button id="connect" class="btn primary full">Authorize with GitHub</button>
+      </section>
+
+      <section class="panel">
+        <h2>Or connect with a Personal Access Token</h2>
+        <p class="desc">
+          Simpler alternative. Create a token with <b>repo</b> scope at
+          <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">github.com/settings/tokens</a>.
+          The token is stored locally in your browser only.
+        </p>
+        <label class="lbl">Personal Access Token</label>
+        <input id="pat" type="password" placeholder="ghp_xxxxxxxxxxxxxxxx" />
+        <button id="savePat" class="btn full">Save token & connect</button>
+      </section>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>
